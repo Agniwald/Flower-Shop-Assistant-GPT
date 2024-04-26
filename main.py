@@ -38,7 +38,7 @@ Also, your goal is to try "sell" the flowers. But don't be too pushy. If custome
 
 # define assistant and function to pass customer info to manager
 assistant = client.beta.assistants.create(
-    name="Flowe Shop Assistant",
+    name="Flower Shop Assistant",
     instructions=context_prompt,
     model="gpt-4-turbo",
     tools=[

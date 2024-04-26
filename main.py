@@ -2,10 +2,12 @@ from openai import OpenAI
 import telebot
 import json
 import ast
-from dotenv import load_dotenv
 import os
 
-load_dotenv()
+if not os.environ.get("PRODUCTION"):
+    from dotenv import load_dotenv
+    load_dotenv()
+
 bot = telebot.TeleBot(os.environ["BOT_TOKEN"])
 client = OpenAI(api_key=os.environ["OPENAI_API"])
 

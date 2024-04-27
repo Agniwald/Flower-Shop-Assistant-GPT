@@ -91,7 +91,7 @@ def pass_to_manager(location, contact, order, comment=None):
     print(order_info)
     str_output = json.dumps(order_info)
     # this info can be redirected to telegram chat with Manager
-    # bot.send_message(MANAGER_CHAT_ID, str_output)
+    bot.send_message(448272985, str_output)
     return str_output
 
 

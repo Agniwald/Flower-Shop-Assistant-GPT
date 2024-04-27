@@ -152,7 +152,7 @@ def txt(tg_message):
                 print(f_args)
                 tool_outputs.append({
                     "tool_call_id": tool.id,
-                    "output": pass_to_manager(*f_args)
+                    "output": pass_to_manager(*f_args.values())
                 })
     
     # Submit all tool outputs at once after collecting them in a list

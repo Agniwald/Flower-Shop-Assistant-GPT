@@ -83,7 +83,7 @@ threads = {}
 # function to pass delivery order info to a manager
 def pass_to_manager(location, contact, order, comment=None):
     order_info = f"Contact: {contact}\nOrder: {order}\nDestination: {location}\nComment: {comment}"
-    print('here', order_info)
+    print('here', location)
     # this info can be redirected to telegram chat with Manager
     bot.send_message(448272985, order_info)
     return order_info
